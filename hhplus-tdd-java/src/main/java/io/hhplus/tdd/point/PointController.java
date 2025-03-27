@@ -19,6 +19,7 @@ public class PointController {
     public UserPoint point(
             @PathVariable long id
     ) {
+        //1. 해당 사용자 객체를 초기화 한다.
         return new UserPoint(0, 0, 0);
     }
 

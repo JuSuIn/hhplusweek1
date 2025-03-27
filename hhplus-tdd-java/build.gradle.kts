@@ -23,10 +23,15 @@ dependencyManagement {
 
 dependencies {
     implementation(libs.spring.boot.starter.web)
+    implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    implementation("junit:junit:4.13.1")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
     annotationProcessor(libs.spring.boot.configuration.processor)
-    testImplementation(libs.spring.boot.starter.test)
+//    testImplementation(libs.spring.boot.starter.test)
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+
 }
 
 // about source and compilation
